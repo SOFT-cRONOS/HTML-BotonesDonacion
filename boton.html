@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <style>
+            .container {
+              display: flex;
+              width: 500px;
+              justify-content: space-between;
+            }
+            .columna1 {
+                width: 50%;
+            }
+            .columna2 {
+                width: 50%;
+            }
+            </style>
+        <div class="columna1" >
+            <button class="btn-matecito">
+                <i class="mini-ico-m"></i>
+                <a>Invitame un matecito</a>
+            </button>
+            <style> 
+            .btn-matecito {
+                display: flex;
+                align-items: center;
+                background-color: #5F7FFF; 
+                color: #FFFFFF; 
+                border: none;
+                padding: 15px 15px 15px 15px;
+                font-size: 16px; 
+                cursor: pointer; 
+                transition: background-color 0.3s, color 0.3s; 
+                margin-right: 10px; 
+            }
+
+            .btn-matecito i {
+                text-decoration: none;
+            }
+
+            .btn-matecito:hover{
+                background-color: white; 
+                color: black;
+            }
+
+            .btn-matecito:hover .mini-ico {
+                filter: grayscale(100%);
+            }
+
+            .mini-ico-m {
+                display: inline-block;
+                background-image: url('https://www.matecito.co/assets/images/matecitos.svg');
+                background-repeat: no-repeat;
+                background-size:contain;
+                width: 25px;
+                height: 25px;
+                padding-right: 10px;
+            }
+            </style>
+        </div>
+        <div class="columna2">
+            <button class="btn-cafecito">
+                <i class="mini-ico"></i>
+                <a>Invitame un cafecito</a>
+            </button>
+            <style> 
+            .btn-cafecito {
+                display: flex;
+                align-items: center;
+                background-color: #5F7FFF; 
+                color: #FFFFFF; 
+                border: none;
+                padding: 15px 15px 15px 15px;
+                font-size: 16px; 
+                cursor: pointer; 
+                transition: background-color 0.3s, color 0.3s; 
+                margin-right: 10px; 
+            }
+    
+            .btn-cafecito i {
+                text-decoration: none;
+            }
+    
+            .btn-cafecito:hover{
+                background-color: white; 
+                color: black;
+            }
+    
+            .btn-cafecito:hover .mini-ico {
+                filter: grayscale(100%);
+            }
+    
+            .mini-ico {
+                display: inline-block;
+                background-image: url('https://cdn.cafecito.app/imgs/cafecito_logo.svg');
+                background-repeat: no-repeat;
+                background-size:contain;
+                width: 25px;
+                height: 25px;
+                padding-right: 10px;
+            }
+
+
+            </style>
+          </div>
+    </div>
+
+
+      
+</body>
+</html>

@@ -29,15 +29,18 @@
             <style> 
             .btn-matecito {
                 display: flex;
+                cursor: pointer;
+                position: relative;
                 align-items: center;
-                background-color: #5F7FFF; 
+                background-color: grey; 
                 color: #FFFFFF; 
                 border: none;
                 padding: 15px 15px 15px 15px;
                 font-size: 16px; 
                 cursor: pointer; 
-                transition: background-color 0.3s, color 0.3s; 
+                transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
                 margin-right: 10px; 
+                
             }
 
             .btn-matecito i {
@@ -45,17 +48,37 @@
             }
 
             .btn-matecito:hover{
-                background-color: white; 
-                color: black;
+                color: #000 !important;
+                background-color: transparent;
+                text-shadow: ntwo;
             }
 
-            .btn-matecito:hover .mini-ico {
+            .btn-matecito:hover:before {
+                top: 0%;
+                bottom: auto;
+                height: 100%;
+            }
+            .btn-matecito:before {
+                display: block;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                height: 0px;
+                width: 100%;
+                z-index: -1;
+                content: '';
+                color: #000 !important;
+                background: #43a047;
+                transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+            }
+
+            .btn-matecito:hover .mini-ico-m {
                 filter: grayscale(100%);
             }
 
             .mini-ico-m {
                 display: inline-block;
-                background-image: url('https://www.matecito.co/assets/images/matecitos.svg');
+                background-image: url('https://img.icons8.com/?size=512&id=ByK9MrehRJwa&format=png');
                 background-repeat: no-repeat;
                 background-size:contain;
                 width: 25px;
@@ -66,7 +89,7 @@
         </div>
         <div class="columna2">
             <button class="btn-cafecito">
-                <i class="mini-ico"></i>
+                <i class="mini-ico-c"></i>
                 <a>Invitame un cafecito</a>
             </button>
             <style> 
@@ -92,11 +115,11 @@
                 color: black;
             }
     
-            .btn-cafecito:hover .mini-ico {
+            .btn-cafecito:hover .mini-ico-c {
                 filter: grayscale(100%);
             }
     
-            .mini-ico {
+            .mini-ico-c {
                 display: inline-block;
                 background-image: url('https://cdn.cafecito.app/imgs/cafecito_logo.svg');
                 background-repeat: no-repeat;
